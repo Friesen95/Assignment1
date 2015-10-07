@@ -8,5 +8,32 @@ router.get('/', function(req, res, next) {
     });
 });
 
+/* GET About Me Page */
+router.get('/aboutMe',function(req, res, next) {
+    
+    //show the about Me view in the browser
+    res.render('aboutMe', {title: 'About Me'});
+});
+
+/*Get Services Page*/
+router.get('/services',function(req,res,next){
+    //show services view in browser
+    res.render('services',{title: 'Services'});
+});
+
+/* GET contact Me page. */
+router.get( '/contactMe',function(req, res, next) {
+    
+    //show the contact me View 
+    res.render('contactMe', {title: 'Contact Me'});
+});
+
+/* GET credentials/resume page. */
+router.get( '/credentials',function(req, res, next) {
+    
+    //show the resume/cerificates page
+    res.render('credentials', {title: 'Credentials'});
+});
+
 
 module.exports = router;

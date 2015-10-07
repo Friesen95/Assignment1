@@ -6,10 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var home = require('./routes/index');
-var aboutMe = require('./routes/aboutMe');
-var services = require('./routes/services');
-var credentials = require('./routes/credentials');
-var contactMe = require('./routes/contactMe');
+var aboutMe = require('./routes/index');
+var services = require('./routes/index');
+var credentials = require('./routes/index');
+var contactMe = require('./routes/index');
 
 var app = express();
 
