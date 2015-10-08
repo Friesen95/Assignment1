@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var home = require('./routes/index');
 var aboutMe = require('./routes/index');
 var services = require('./routes/index');
-var projects = require('./routes/projects');
+var projects = require('./routes/index');
 var credentials = require('./routes/index');
 var contactMe = require('./routes/index');
 
