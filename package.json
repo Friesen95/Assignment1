@@ -1,10 +1,10 @@
+// change nodemon to node when commiting to gitHub, so that itwill work on azure and huroku 
 {
   "name": "Assignment1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
-      // change nodemon to node when commiting to gitHub, so that itwill work on azure and huroku 
   },
   "dependencies": {
     "body-parser": "~1.13.2",
