@@ -1,3 +1,7 @@
+/* FileName: ROutes 
+    Name: Alex Friesen 
+    Website name: http://myportfolio-alexf.azurewebsites.net/
+    Description: The routes file is responsible to bring up the proper view that the user wants */
 var express = require('express');
 var router = express.Router();
 
@@ -30,7 +34,7 @@ router.get('/projects',function(req,res,next){
 /* GET contact Me page. */
 router.get( '/contactMe',function(req, res, next) {
     
-    //show the contact me View 
+    //show the contact page
     res.render('contactMe', {title: 'Contact Me'});
 });
 

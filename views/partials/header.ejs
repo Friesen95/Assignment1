@@ -1,3 +1,7 @@
+<!-- FileName: Header
+    Name: Alex Friesen 
+    Website name: http://myportfolio-alexf.azurewebsites.net/
+    Description: My header file that gets called in every view -->
 <!DOCTYPE html>
 <html>
 
@@ -5,7 +9,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-widt, initial-scale=1.0" />
     <title>Alex Friesen Portfolio</title>
-    <link rel="stylesheet" href="./public/stylesheets/style.css">
     
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -18,18 +21,22 @@
 
     <!-- Latest compiled and minified   JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="../../stylesheets/style.css">
+
 </head>
 
 <body>
+    <!-- Navbar that will be on top of every page -->
     <nav class="navbar navbar-inverse navbar-top">
-        <div class="container-fluid">
+        <!-- <div class="container-fluid"> -->
             <div class="navbar-header">
-                <h1 class="navbar-brand">My Portfolio</h1>
+                <h1 class="navbar-brand">Alex Friesen Portfolio</h1>
             </div>
-            <div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Home</a>
-                    </li>
+                    <li>
+                    <a href="/">Home</a>
+                        </li>
                     <li><a href="/aboutMe">About Me</a>
                     </li>
                     <li><a href="/projects">Projects</a>
@@ -41,7 +48,7 @@
                     <li><a href="/contactMe">Contact Me</a>
                     </li>
                 </ul>
-            </div>
-        </div>
+        <!-- </div> -->
     </nav>
-    <div class="content">
+    <!-- the containers job will be to auto margin the left and right -->
+    <div class="container">
