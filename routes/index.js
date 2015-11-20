@@ -271,9 +271,22 @@ router.post('/:id', requireAuth, function (req, res, next){
             res.end(err);
         }
         else{
-            res.redirect('businessContacts');
+            res.redirect('/businessContacts');
         }
     });
 });
 
+/*Deleting a contact function*/
+router.get('/delete.:id', requireAuth, function(req, res, next){
+    var id = req.params.id;
+    Contacts.remove({_id: id}, function(err){
+        if (err) {
+            console.log(err);
+            res.end(err);
+        }
+        else{
+            res.direct('/businessContact');
+        }
+    });
+});
 module.exports = router;
