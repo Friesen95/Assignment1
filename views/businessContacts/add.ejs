@@ -1,0 +1,38 @@
+<!-- FileName: indeAdd(Business Contacts)
+    Name: Alex Friesen 
+    Website name: http://myportfolio-alexf.azurewebsites.net/
+    Descriotion: This is the page where I add a Business COntacts -->
+
+<% include ../partials/header.ejs %>
+<main class="container">
+    <h1>Add a New Contact</h1>
+       <div class="col-sm-4">
+        <form method="post">
+            <fieldset class="form-group">
+                <label for="name">Name: *</label>
+                <input name="name" type="text" class="form-control" required autofocus />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="phoneNum">Phone Number: *</label>
+                <input name="phoneNum" type="tel" class="form-control" required />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="email">Email: *</label>
+                <input name="email" type="email" class="form-control" required />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="businessName">Business Name: *</label>
+                <input name="businessName" type="text" class="form-control" required />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="jobPossibilities">Job Possibility: *</label>
+                <input name="jobPossibilities" type="text" class="form-control" required />
+            </fieldset>
+            <fieldset class="form-group text-right">
+                <input type="submit" class="btn btn-success" value="Submit"/>
+            </fieldset>
+        </form>
+    </div>
+</main>
+
+<% include ../partials/footer.ejs %>
