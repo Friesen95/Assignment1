@@ -1,0 +1,18 @@
+{
+  "name": "Assignment1",
+  "homepage": "https://github.com/Friesen95/COMP2068-Assignment1",
+  "authors": [
+    "Alex Friesen <200302342@student.georgianc.on.ca>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

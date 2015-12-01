@@ -1,49 +1,50 @@
-<!-- FileName: index(Users)
+<!-- FileName: index(Business Contacts)
     Name: Alex Friesen 
     Website name: http://myportfolio-alexf.azurewebsites.net/
-    Descriotion: This is where one can view all the account -->
-<% include ../partials/header.ejs %>
+    Descriotion: This is the main page for my Business COntacts -->
 
+<% include ../partials/header.ejs %>
 <main class="container">
-    <h1>Users</h1>
+    <h1>Business Contacts</h1>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <a href="/users/add" title="Add User"><i class="fa fa-plus-circle"></i> Add a new User</a>
+            <a href="/businessContacts/add" title="Add Contact"><i class="fa fa-plus-circle"></i> Add a new Contact</a>
         </div> <!-- panel-heading -->
-        <% if (users.length > 0) { %>
+        <% if (contact.length > 0) { %>
         <div class="panel-body table-responsive">
             <table class="table table-bordered table-striped table-hover">
                 <thead>
                     <tr>
-                        <th>User</th>
+                        <th>Name</th>
+                        <th>Phone Number</th>
                         <th>Email</th>
-                        <th></th>
+                        <th>Business Name</th>
+                        <th>Job Possibility</th>
                     </tr>
                 </thead>
                 </tbody>
-                <% for (var i = 0; i < users.length; i++) { %>
+                <% for (var i = 0; i < contacts.length; i++) { %>
                 <tr>
                     <td>
-                        <%= users[i].displayName %>
+                        <%= contacts[i].name %>
                     </td>
                     <td>
-                        <%= users[i].email %>
+                        <%= contacts[i].phoneNum %>
                     </td>
                     <td>
-                        <% var date = new Date(users[i].created);
-                         var dateString = date.toDateString() + " " + date.toLocaleTimeString(); %>
-                        <%= dateString %>
+                        <%= contacts[i].email %>
                     </td>
                     <td>
-                        <% date = new Date(users[i].updated);
-                         var dateString = date.toDateString() + " " + date.toLocaleTimeString(); %>
-                        <%= dateString %>
+                        <%= contacts[i].businessName %>
+                    </td>
+                    <td>
+                        <%= contacts[i].jobPossibilities %>
                     </td>
                     <td>
                         <a href="/users/<%= users[i]._id %>" title="Edit" class="btn btn-primary">
                             <i class="fa fa-pencil-square-o"></i>
                         </a>
-                        <a href="/users/delete/<%= users[i]._id %>" title="Delete" onclick="return confirm('Are you sure you want to delete this?');" class="btn btn-danger">
+                        <a href="/users/delete/<%= users[i]._id %>" title="Delete" onclick="return confirm('Are you sure you want to delete this Contact?');" class="btn btn-danger">
                             <i class="fa fa-trash-o"></i>
                         </a>
                     </td>   
@@ -56,4 +57,5 @@
     </div><!-- panel panel-default -->
 
 </main>
+<% include ../partials/boot.ejs %>
 <% include ../partials/footer.ejs %>

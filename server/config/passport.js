@@ -35,7 +35,7 @@ module.exports = function(passport) {
 			});
 		});
 	}));
-
+	//config regist local srategy
 	passport.use('local-registration', new LocalStrategy({
 		passReqToCallback: true
 	},
